@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+#main {
+    width: 100%;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.heading{
+     margin-top: 40px;
+}
+
+.heading h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    margin-left: 30px;
+    opacity: .6;
+
+}
+
+.heading #secondh1{
+    margin-left: 200px;
+}
+
+.blocktext {
+      width: fit-content;
+}
+
+.blocktext h5{
+    text-align: right;
+}
+
+.smallheading{
+  margin-top: 100px;
+  padding: 50px;  
+}
+
+.smallheading h5{
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: .5vw;
+    font-size: 1vw;
+}
+
+.herofooter{
+    padding: o 2vw;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   bottom: 3%;
+    
+}
+
+.herofooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.herofooter .iconset{
+    display: flex;
+    gap: 5px;
+   
+}
+
+.herofooter .circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
