@@ -198,3 +198,29 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.footerleft{
+    display: flex;
+    gap: 20px;
+}
+
+.footerright{
+    display: flex;
+    gap: 20px;
+}
+
+.footer a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
