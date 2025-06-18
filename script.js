@@ -1,0 +1,16 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+function circlemouseFollower (){
+    window.addEventListener("mousemove",function(dets){
+        // console.log(dets.clientX);
+
+        
+        document.querySelector(".minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+        
+    })
+}
+
+circlemouseFollower();
