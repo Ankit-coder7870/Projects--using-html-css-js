@@ -32,13 +32,37 @@ function firstPageAnimation(){
 }
 
 
+function mouseChaptaFollwer(){
 
-function circlemouseFollower (){
+ let scaleX = 1;
+ let scaleY = 1;
+
+
+ let prevX = 0;
+ let prevY = 0;
+
+
+    window.addEventListener("mousemove",function(dets){
+     scaleX = gsap.utils.clamp(.8,1.2,dets.clientX-prevX);
+          scaleY = gsap.utils.clamp(.8,1.2,dets.clientY-prevY);
+
+
+          prevX = dets.clientX;
+          prevY = dets.clientY;
+
+          circlemouseFollower(scaleX,scaleY)
+
+    })
+}
+
+mouseChaptaFollwer();
+
+function circlemouseFollower (scaleX,scaleY){
     window.addEventListener("mousemove",function(dets){
        
 
         
-        document.querySelector(".minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+        document.querySelector(".minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${scaleX},${scaleY})`;
         
     })
 }
